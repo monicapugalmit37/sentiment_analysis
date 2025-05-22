@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ChatGPT Review Sentiment Input</title>
+</head>
+<body>
+  <h2>Enter Your Review:</h2>
+  <input type="text" id="reviewInput" style="width: 400px;" />
+  <button onclick="sendReview()">Submit</button>
+
+  <script>
+    function sendReview() {
+      const review = document.getElementById("reviewInput").value;
+      // Send review to Streamlit by setting it in Streamlit's window object
+      window.parent.postMessage({ review: review }, "*");
+    }
+  </script>
+</body>
+</html>

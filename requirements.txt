@@ -1,0 +1,12 @@
+pandas
+numpy
+nltk
+scikit-learn
+matplotlib
+seaborn
+wordcloud
+plotly
+streamlit
+joblib
+tensorflow==2.9.0
+transformers
